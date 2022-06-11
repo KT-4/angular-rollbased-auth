@@ -1,0 +1,12 @@
+ <!-- <p>admin works!</p> -->
+
+<div class="container">
+    <div class="card mt-4">
+        <div class="card-body">
+            <p>Access only administrator</p>
+            <ul *ngIf="users">
+                <li *ngFor="let user of users">{{user.name}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

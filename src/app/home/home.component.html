@@ -1,0 +1,35 @@
+<!-- <h2>Welcome Home page</h2> -->
+
+    <div class="card mt-4">
+        <h4 class="card-header" style="text-align:center">Home</h4>
+        <div class="card-body" style="text-align:center">
+            <p>Role is :<strong>{{userFromApi.role}}</strong></p>
+            <p>currunt user from secure api and point:</p>
+            <ul>
+               <li>{{userFromApi.name}}</li>
+           </ul>
+        </div>
+        <table class="table table-striped">
+            <thead >
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Email</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="col">{{userFromApi.name}}</td>
+                    <td scope="col">{{userFromApi.age}}</td>
+                    <td scope="col">{{userFromApi.email}}</td>
+                    <td><a [routerLink]="['users/',userFromApi._id,'edit']">Edit</a></td>
+                    <td><a [routerLink]="['users/',userFromApi._id,'view']">View</a></td>
+                </tr>
+            </tbody>
+
+        </table>
+       
+        
+    </div>
+    

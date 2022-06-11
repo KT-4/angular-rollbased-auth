@@ -1,0 +1,20 @@
+.login-form {
+    border-radius: 10px;
+    margin: 100px auto !important;
+    border: 5px solid #198754;
+    
+    background:url('../../assets/image/night.jpg');
+    box-shadow: 0px 5px 20px #777777;
+  }
+  input.ng-invalid.ng-touched {
+    border-color: #d8363a;
+    box-shadow: 0px 0px 10px #b94042;
+  }
+
+  #sect1 {  
+    height: 650 px;  
+    
+    background-size:100%;  
+    background-size: cover;  
+}   
+  

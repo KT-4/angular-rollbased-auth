@@ -1,0 +1,46 @@
+
+<div id="sect1" class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="login-form text-white mt-5 p-4">
+          <form [formGroup]="loginForm" (ngSubmit)="submit()" class="row g-3">
+            <h4 style="color:aliceblue; font-weight:bold;text-align:center">User Login Page</h4>
+            <div class="col-12">
+              <label style="color:aliceblue; font-weight:bold;">Email</label>
+              <input
+                type="text"
+                name="email"
+                formControlName="email"
+                class="form-control"
+                placeholder="Email"/>
+            </div>
+            <div class="col-12">
+              <label style="color:aliceblue; font-weight:bold;">Password</label>
+              <input
+                type="password"
+                name="password"
+                formControlName="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col-12">
+              <button
+                [disabled]="!loginForm.valid"
+                type="submit"
+                class="btn btn-dark float-end">
+                Login
+              </button>
+            </div>   
+          </form>
+          <hr class="mt-4" />
+          <div class="col-12">
+            <p class="text-centermb-0">
+              Have not account yet?&#x2003;.
+              &#x2003;<a (click)="submit()" style="color: orange">Signup</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
